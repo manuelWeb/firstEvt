@@ -1,0 +1,6 @@
+{
+  "date"   : "1016",
+  "output" : "evtSrc/**/",
+  "dest"   : "evtProd/",
+  "brand"  : "HO_"
+}

@@ -1,0 +1,37 @@
+/ ### !important 
+/ > si modif var.slim alors sauver indexC.slim pour mise à jour des variables. 
+- $date = "1016"
+- ID = "530"
+- url = "http://www.ideeshomme.fr/fr/"
+/ ### price
+- $price_pk1 = "39,90"
+- $price_pk2 = "29,90"
+- $price_pk3 = "16,00"
+/ ###tite
+- $title_pk_1 = "Ramasse-feuilles"
+- $title_pk_2 = "Dorure funeraire"
+- $title_pk_3 = ["Rétroviseur panoramique","angle mort"]
+/ urlPck
+-urlPk1 = "bricolage-jardin-voiture/entretien-outils-jardin/ramasse-feuilles/2016459.html"
+-urlPk2 = "bricolage-jardin-voiture/jardin-tapis/dorure-funeraire-blanc/1003151.html"
+-urlPk3 = "bricolage-jardin-voiture/voiture/retroviseur-panoramique-angle-mort/1993450.html"
+/ ###analytics
+- $gaq_pck1      = "'EncartHP_RayonEvt', 'pk1_ramasse-feuilles-2016459', "
+- $gaq_pck2      = "'EncartHP_RayonEvt', 'pk2_dorure-funeraire-blanc-1003151', "
+- $gaq_pck3      = "'EncartHP_RayonEvt', 'pk3_retroviseur-panoramique-angle-mort-1993450', "
+/ txt
+-$txtBtn = ["voir les nouveautés",""]
+
+/ ############ not change it's magic ^_^ ####################
+/ ###LINK do not change 
+- $linkPck1      = "#{url}#{urlPk1}"
+- $linkPck2      = "#{url}#{urlPk2}"
+- $linkPck3      = "#{url}#{urlPk3}"
+
+/ do not change
+- $gaq_start     = "ga('local.send', 'event', "
+- $gaq_end       = "document.location.pathname);"
+
+- $gaq_Ecata     = "'EncartHP_Ecata', 'EncartHP_Ecata-"+$date+"', "
+- $gaq_rayon_evt = "'EncartHP_RayonEvt"+ID+"', 'decouvrezSelection', "
+- $linkRayEvt    = "#{url}boutique/rayon_evenement.aspx?pg=0&nbp=99&evenement_id=#{ID}"
